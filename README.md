@@ -1,1 +1,1 @@
-# clickx3-pytest-template
+# ClickX3 Pytest Template

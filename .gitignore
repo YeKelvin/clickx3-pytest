@@ -1,0 +1,16 @@
+.idea/
+.cache/
+.pytest_cache/
+__pycache__/
+
+*.lock
+*.log
+
+**/.html/
+**/.report/
+**/.screenrecords/
+**/.screenshots/
+**/assets/
+**/report.html
+
+resources/webdrive/*

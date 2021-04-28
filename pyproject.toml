@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "clickx3-pytest"
+version = "0.1.0"
+description = "ClickX3测试案例"
+authors = ["Kelvin.Ye <testmankelvin@163.com>"]
+readme = "README.md"
+
+homepage = "https://github.com/YeKelvin/clickx3-pytest-template"
+repository = "https://github.com/YeKelvin/clickx3-pytest-template"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^5.4.3"
+pytest-html = "^3.1.1"
+pytest-dependency = "^0.5.1"
+pytest-ordering = "^0.6"
+pytest-sugar = "^0.9.4"
+pytest-rerunfailures = "^9.1.1"
+allure-pytest = "^2.8.40"
+allure-python-commons = "^2.8.40"
+pyyaml = "^5.4.1"
+clickx3-toolkit = {path = "../clickx3-toolkit", develop = true}
+
+[tool.poetry.dev-dependencies]
+flake8 = "*"
+yapf = "*"
+
+[tool.poetry.scripts]
+
+[build-system]
+requires = [
+    "setuptools!=50.0",
+    "poetry>=1.1.5"
+]
+build-backend = "poetry.masonry.api"
+
+[tool.isort]
+profile = "google"
+line_length = 120
+multi_line_output = 3
+group_by_package = true
