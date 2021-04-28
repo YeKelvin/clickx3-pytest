@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "clickx3-pytest"
 version = "0.1.0"
-description = "ClickX3测试案例"
+description = "ClickX3 Pytest Template"
 authors = ["Kelvin.Ye <testmankelvin@163.com>"]
 readme = "README.md"
 
@@ -23,7 +23,6 @@ pytest-sugar = "^0.9.4"
 pytest-rerunfailures = "^9.1.1"
 allure-pytest = "^2.8.40"
 allure-python-commons = "^2.8.40"
-pyyaml = "^5.4.1"
 clickx3-toolkit = {path = "../clickx3-toolkit", develop = true}
 
 [tool.poetry.dev-dependencies]
@@ -44,3 +43,28 @@ profile = "google"
 line_length = 120
 multi_line_output = 3
 group_by_package = true
+
+[tool.pytest]
+minversion = "6.0"
+addopts = [
+    "-s",
+    "-v",
+    "--disable-warnings",
+    "--pyargs",
+    "--html=report.html"
+]
+testpaths = [
+    "testcases"
+]
+log_cli = true
+filterwarnings = [
+    "ignore::DeprecationWarning"
+]
+required_plugins = [
+    "pytest-html",
+    "pytest-rerunfailures"
+]
+python_classes =[
+    "Test*",
+    "*TestSuite"
+]
