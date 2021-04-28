@@ -13,4 +13,11 @@ __pycache__/
 **/assets/
 **/report.html
 
+resources/envconfig/*
+resources/image/*
+resources/paddleocr/*
 resources/webdrive/*
+!resources/envconfig/template.yaml
+!resources/image/default.jpg
+!resources/paddleocr/README.md
+!resources/webdrive/README.md
