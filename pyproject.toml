@@ -15,17 +15,18 @@ default = true
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pytest = "^5.4.3"
-pytest-html = "^3.1.1"
-pytest-dependency = "^0.5.1"
-pytest-ordering = "^0.6"
-pytest-sugar = "^0.9.4"
-pytest-rerunfailures = "^9.1.1"
-allure-pytest = "^2.8.40"
-allure-python-commons = "^2.8.40"
 clickx3-toolkit = {path = "../clickx3-toolkit", develop = true}
 
 [tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+pytest-aggreport = "*"
+pytest-html = "*"
+pytest-order = "*"
+pytest-rerunfailures = "*"
+pytest-repeat = "*"
+pytest-sugar = "*"
+# allure-pytest = "*"
+# allure-python-commons = "*"
 flake8 = "*"
 yapf = "*"
 
@@ -33,7 +34,7 @@ yapf = "*"
 
 [build-system]
 requires = [
-    "setuptools!=50.0",
+    "setuptools>=50.0",
     "poetry>=1.1.5"
 ]
 build-backend = "poetry.masonry.api"
@@ -51,7 +52,8 @@ addopts = [
     "-v",
     "--disable-warnings",
     "--pyargs",
-    "--html=report.html"
+    "--html=report.html",
+    "--self-contained-html"  # css合并至html
 ]
 testpaths = [
     "testcases"
@@ -62,6 +64,7 @@ filterwarnings = [
 ]
 required_plugins = [
     "pytest-html",
+    "pytest-order",
     "pytest-rerunfailures"
 ]
 python_classes =[
