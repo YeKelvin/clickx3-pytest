@@ -44,30 +44,3 @@ profile = "google"
 line_length = 120
 multi_line_output = 3
 group_by_package = true
-
-[tool.pytest]
-minversion = "6.0"
-addopts = [
-    "-s",
-    "-v",
-    "--disable-warnings",
-    "--pyargs",
-    "--html=report.html",
-    "--self-contained-html"  # css合并至html
-]
-testpaths = [
-    "testcases"
-]
-log_cli = true
-filterwarnings = [
-    "ignore::DeprecationWarning"
-]
-required_plugins = [
-    "pytest-html",
-    "pytest-order",
-    "pytest-rerunfailures"
-]
-python_classes =[
-    "Test*",
-    "*TestSuite"
-]
