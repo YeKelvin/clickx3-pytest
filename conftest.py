@@ -3,7 +3,7 @@
 # @File    : conftest.py
 # @Time    : 2021/4/28 11:10
 # @Author  : Kelvin.Ye
-from conftests.fixtures.driver_fixture import *  # noqa
-from conftests.fixtures.variable_fixture import *  # noqa
-from conftests.plugins.html_plugin import *  # noqa
-from conftests.options import *  # noqa
+from clickx3.pytest.fixtures import *  # noqa
+from clickx3.pytest.plugins import *  # noqa
+from clickx3.pytest.hooks import *  # noqa
+from clickx3.pytest.options import *  # noqa
