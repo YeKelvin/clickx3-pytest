@@ -51,7 +51,7 @@ def test_parametrize(key):
     print(key)
 
 
-class TestClass:
+class ClassTestSuite:
 
     def setup_class(cls):
         print('setup_class()：类执行前调用，参数只有cls，不能使用fixture')
