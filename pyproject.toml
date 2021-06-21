@@ -1,12 +1,19 @@
 [tool.poetry]
 name = "clickx3-pytest"
 version = "0.1.0"
-description = "ClickX3 Pytest"
+description = "ClickX3 Pytest Plugin"
 authors = ["Kelvin.Ye <testmankelvin@163.com>"]
 readme = "README.md"
 
 homepage = "https://github.com/YeKelvin/clickx3-pytest"
 repository = "https://github.com/YeKelvin/clickx3-pytest"
+
+packages = [
+    { include = "clickx3_pytest" },
+    { include = "clickx3_pytest/**/*.py" },
+    { include = "clickx3_app" },
+    { include = "clickx3_app/**/*.py" }
+]
 
 [[tool.poetry.source]]
 name = "aliyun"

@@ -5,11 +5,11 @@
 # @Author  : Kelvin.Ye
 import pytest
 
-from clickx3.pytest.plugins import android_screenrecord_plugin
-from clickx3.pytest.plugins import android_screenshot_plugin
-from clickx3.pytest.plugins import pytest_html_plugin
-from clickx3.pytest.plugins import web_screenrecord_plugin
-from clickx3.pytest.plugins import web_screenshot_plugin
+from clickx3_pytest.plugins import android_screenrecord_plugin
+from clickx3_pytest.plugins import android_screenshot_plugin
+from clickx3_pytest.plugins import pytest_html_plugin
+from clickx3_pytest.plugins import web_screenrecord_plugin
+from clickx3_pytest.plugins import web_screenshot_plugin
 
 
 def pytest_configure(config):

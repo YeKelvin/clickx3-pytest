@@ -5,7 +5,7 @@
 # @Author  : Kelvin.Ye
 import os
 
-from clickx3.pytest.utils import node_id_to_name
+from clickx3_pytest.utils import node_id_to_name
 from clickx3.utils import project
 from clickx3.utils.log_util import get_logger
 

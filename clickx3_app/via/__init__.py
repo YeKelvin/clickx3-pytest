@@ -5,7 +5,7 @@
 # @Author  : Kelvin.Ye
 from clickx3.u2.app import AndroidApp
 from clickx3.utils.log_util import get_logger
-from apps.via.home import HomePage
+from clickx3_app.via.home import HomePage
 
 log = get_logger(__name__)
 

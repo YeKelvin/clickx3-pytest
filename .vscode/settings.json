@@ -14,10 +14,6 @@
     ],
 
     /* Python PATH */
-    "python.venvFolders": [
-        "virtualenvs"
-    ],
-    "python.venvPath": "${workspaceFolder}/.cache",
     // "python.pythonPath": "path/to/your/python",
 
     /* Python Lint */
